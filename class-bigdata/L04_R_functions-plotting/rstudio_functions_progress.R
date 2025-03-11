@@ -132,6 +132,22 @@ unlist(
 ### a foo loop using a variable assignment
 ### a lapply function
 
+#number 1
+for(i in 1:length(numbers_list)){
+  num_vec<-numbers_list[[i]]
+  calc<-mean(num_vec)
+  print(calc)
+}
+
+
+#number 2
+for (vector in numbers_list){
+  res<-mean(vector)
+  print(res)
+}
+
+#number 3
+unlist(lapply(numbers_list, mean))
 
 
 ######################################
