@@ -100,5 +100,5 @@ proportions = replicate(100, {
   return(proportion)
 })
 
-hist(proportions)
+hist(proportions, slim=c(0,3))
 abline(v = proportion, col='red', lwd=3, lty='dashed')
